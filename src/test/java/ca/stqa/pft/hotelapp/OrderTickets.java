@@ -1,3 +1,4 @@
+/*
 package ca.stqa.pft.hotelapp;
 
 import org.openqa.selenium.By;
@@ -15,6 +16,7 @@ public class OrderTickets {
   @BeforeMethod
   public void setUp() throws Exception {
     wd = new FirefoxDriver();
+    wd.manage().window().maximize();
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
   }
 
@@ -30,14 +32,20 @@ public class OrderTickets {
     wd.findElement(By.id("login")).click();
     wd.findElement(By.linkText("Booked Itinerary")).click();
     wd.findElement(By.linkText("Search Hotel")).click();
-    if (!wd.findElement(By.xpath("//*[@id='location']//option[4]")).isSelected()) {
-      wd.findElement(By.xpath("//*[@id='location']//option[4]")).click();
+    if (!wd.findElement(By.xpath("/*/
+/*[@id='location']//option[4]")).isSelected()) {
+      wd.findElement(By.xpath("/*/
+/*[@id='location']//option[4]")).click();
     }
-    if (!wd.findElement(By.xpath("//*[@id='room_nos']//option[3]")).isSelected()) {
-      wd.findElement(By.xpath("//*[@id='room_nos']//option[3]"));
+    if (!wd.findElement(By.xpath("/*/
+/*[@id='room_nos']//option[3]")).isSelected()) {
+      wd.findElement(By.xpath("/*/
+/*[@id='room_nos']//option[3]"));
     }
-    if (!wd.findElement(By.xpath("//*[@id='adult_room']//option[3]")).isSelected()) {
-      wd.findElement(By.xpath("//*[@id='adult_room']//option[3]")).click();
+    if (!wd.findElement(By.xpath("/*/
+/*[@id='adult_room']//option[3]")).isSelected()) {
+      wd.findElement(By.xpath("/*/
+/*[@id='adult_room']//option[3]")).click();
     }
     wd.findElement(By.id("Submit")).click();
     if (!wd.findElement(By.id("radiobutton_1")).isSelected()) {
@@ -61,11 +69,15 @@ public class OrderTickets {
     Select dropdown = new Select(wd.findElement(By.id("cc_type")));
     dropdown.selectByVisibleText("VISA");
 
-    if (!wd.findElement(By.xpath("//*[@id='cc_exp_month']//option[6]")).isSelected()) {
-      wd.findElement(By.xpath("//*[@id='cc_exp_month']//option[6]")).click();
+    if (!wd.findElement(By.xpath("/*/
+/*[@id='cc_exp_month']//option[6]")).isSelected()) {
+      wd.findElement(By.xpath("/*/
+/*[@id='cc_exp_month']//option[6]")).click();
     }
-    if (!wd.findElement(By.xpath("//*[@id='cc_exp_year']//option[11]")).isSelected()) {
-      wd.findElement(By.xpath("//*[@id='cc_exp_year']//option[11]")).click();
+    if (!wd.findElement(By.xpath("/*/
+/*[@id='cc_exp_year']//option[11]")).isSelected()) {
+      wd.findElement(By.xpath("/*/
+/*[@id='cc_exp_year']//option[11]")).click();
     }
     wd.findElement(By.id("cc_cvv")).click();
     wd.findElement(By.id("cc_cvv")).clear();
@@ -91,3 +103,4 @@ public class OrderTickets {
     }
 }
 
+*/
