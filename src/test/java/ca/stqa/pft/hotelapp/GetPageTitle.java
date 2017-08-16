@@ -11,9 +11,8 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class GetPageTitle1 {
+public class GetPageTitle {
  private FirefoxDriver wd;
- private boolean acceptNextAlert = true;
 
   @BeforeMethod
   public void setUp() throws Exception {
@@ -31,7 +30,7 @@ public class GetPageTitle1 {
     wd.findElement(By.id("password")).clear();
     wd.findElement(By.id("password")).sendKeys("WE589tj");
     wd.findElement(By.id("login")).click();
- 
+
     String spageTitle = wd.getTitle();
       System.out.println("Your page title is: " + spageTitle);
      if (spageTitle.equalsIgnoreCase("AdactIn.com - Search Hotel"))

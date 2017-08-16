@@ -12,8 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class VerificationPointTest {
  private FirefoxDriver wd;
- private boolean acceptNextAlert = true;
-// private StirngBuffer verificationErrors = new StirngBuffer();
+
   @BeforeMethod
   public void setUp() throws Exception {
     wd = new FirefoxDriver();
